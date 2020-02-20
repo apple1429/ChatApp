@@ -1,0 +1,25 @@
+<app-header></app-header>
+<div class="container">
+  <div class="row">
+      <div class="col">
+          <h1 style="text-align: center;"
+          >{{title}}</h1>
+         <p style="color:#00802F; font-size: 20px; font-style: italic; margin-bottom: 70px; text-align: center;" 
+         >developed by 01001
+           </p>
+      </div>
+  </div>
+  <div class="row">
+    <div class="col-md-4">
+      <app-nick-name></app-nick-name>
+    </div>
+    <div class="col-md-8">
+        <app-chat-history [history]="historyMessage"></app-chat-history>
+        <app-chat-bar (submitMessage)="onSubmitMessage($event)"></app-chat-bar>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>
+      
+
+

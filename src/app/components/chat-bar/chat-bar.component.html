@@ -1,0 +1,8 @@
+<div class="fenster">
+  <h1>Chat Box</h1>
+  <textarea rows="2" cols="20" class="form-control" placeholder="Eingabe...." [(ngModel)]="chatMessage"
+    (keyup.enter)="addMessage(true)"></textarea>
+  <div>
+    <button class="btn btn-primary" (click)="addMessage(false)" [disabled]="!chatMessage">senden</button>
+  </div>
+</div>
